@@ -1,0 +1,12 @@
+version: '3'
+services:
+    game1:
+      build:
+        dockerfile: Dockerfile
+      image: game2048:16
+      ports: 
+        - "8081:8080"
+    game2:
+      image: game2048:16
+      ports: 
+        - "8082:8080"
